@@ -1,25 +1,29 @@
-# MLOps Lab 1 – Smart Calorie + Distance Analyzer  
+# MLOps Lab 4 – Smart Calorie + Distance Analyzer (GIT Lab)
 
-[![Pytest](https://github.com/<your-username>/MLOps_Lab3/actions/workflows/github_lab1_pytest_action.yml/badge.svg)](https://github.com/<your-username>/MLOps_Lab3/actions/workflows/github_lab1_pytest_action.yml)
-[![Unittests](https://github.com/<your-username>/MLOps_Lab3/actions/workflows/github_lab2_unittest_action.yml/badge.svg)](https://github.com/<your-username>/MLOps_Lab3/actions/workflows/github_lab2_unittest_action.yml)
+# 🧮 Smart Calorie Analyzer — MLOps Lab
+
+## 📘 Project Summary
+The **Smart Calorie Analyzer** calculates calories burned and total workout time for activities such as walking, running, and cycling using weight, speed, and distance as inputs.  
+The core functions — `calories_burned()` and `total_summary()` — were tested with both **Pytest** and **Unittest** frameworks to ensure accuracy and robust handling of invalid inputs.  
+To automate testing and ensure continuous validation, two **GitHub Actions** workflows were created (one for Pytest and one for Unittest) under `.github/workflows/`.  
+Each workflow triggers automatically on every push to the `main` branch, installs dependencies, runs tests, and generates reports.  
+Both pipelines were updated to the latest stable GitHub Actions versions (`checkout@v4`, `setup-python@v5`, and `upload-artifact@v4`) and executed successfully, confirming that all test cases passed.  
+This lab demonstrates how analytical Python scripts can be integrated with **CI/CD pipelines** to achieve automation, reliability, and reproducibility in MLOps workflows.
 
 ---
 
-## 🔧 Changes Made in This Assignment
-
-| Area | Description |
-|------|-------------|
-| **Application** | Replaced the default calculator example with `smart_calorie_analyzer.py`, which estimates calories burned from activity type, distance, speed and body weight using MET values. |
-| **Testing** | Implemented both **Pytest** and **Unittest** suites in the `test/` folder to validate correct outputs, invalid inputs and edge cases. |
-| **Automation** | Added two GitHub Actions workflows (`github_lab1_pytest_action.yml` and `github_lab2_unittest_action.yml`) that automatically run the test suites on every push. |
-| **Enhancements** | Supports multiple real-world activities (Walking, Running, Cycling) and rejects unsupported activities or non-positive values. |
-| **Documentation** | Created this README to describe setup, logic, testing and CI/CD integration for the lab. |
+## ⚙️ Features
+- Calculates calories and total time across multiple activities  
+- Validates inputs for unsupported activities and negative values  
+- Includes both Pytest and Unittest for testing  
+- Automates all testing through GitHub Actions CI/CD  
+- Uses updated and secure GitHub workflow versions  
 
 ---
 
 ## 📁 Repository Structure
 
-MLOps_Lab3/  
+MLOps_Lab4/  
 │  
 ├── src/  
 │   └── smart_calorie_analyzer.py  
@@ -129,6 +133,6 @@ After pushing the project, both workflows in the **Actions** tab complete succes
 
 ### 👨‍💻 Author
 
-**Name:** Yash Gujjula  
-**Course:** IE-7374 – MLOps  
-**University:** George Mason University
+**Name:** Yaswanth Kumar Reddy
+
+

@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4     # 🔄 updated from @v2
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5  # 🔄 updated from @v2
         with:
-          python-version: 3.10
+          python-version: "3.12"       # ✅ latest supported version
 
       - name: Install dependencies
         run: |
@@ -22,3 +22,4 @@ jobs:
       - name: Run unittests
         run: |
           python -m unittest discover -s test -p "test_unittest.py"
+
